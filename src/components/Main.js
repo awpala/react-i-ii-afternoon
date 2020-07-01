@@ -18,12 +18,10 @@ class Main extends Component {
     handlePrevious = () => {
         if(this.state.currentCard === 0) {
             this.setState({
-                data: data,
                 currentCard: this.state.data.length - 1
             });
         } else {
             this.setState({
-                data: data,
                 currentCard: this.state.currentCard - 1
             });
         }

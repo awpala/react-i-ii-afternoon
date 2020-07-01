@@ -7,12 +7,12 @@ function Card(props) {
         <div className="card">
             <div className="card-contents">
                 <h1>{`${name.first} ${name.last}`}</h1>
-                <section>
+                <section className="card-fields">
                     <p><span className="card-field">From: </span>{`${city}, ${country}`}</p>
                     <p><span className="card-field">Job Title: </span>{title}</p>
                     <p><span className="card-field">Employer: </span>{employer}</p>
                 </section>
-                <section>
+                <section className="card-fields">
                     <p><span className="card-field">Favorite Movies:</span></p>
                     <ol>
                         <li>{favoriteMovies[0]}</li>
@@ -21,7 +21,7 @@ function Card(props) {
                     </ol>
                 </section>
             </div>
-            <div>{`${id} / ${props.dataSize}`}</div>
+            <div className="current-card">{`${id} / ${props.dataSize}`}</div>
         </div>
     );
 }

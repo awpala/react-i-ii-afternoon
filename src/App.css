@@ -11,21 +11,46 @@ body {
 }
 
 header {
-    background-color: skyblue;
+    background-color: rgb(0, 153, 255);
     height: 5vh;
     width: 100vw;
     margin: 0;
-    padding: 5px;
+    padding-top: 2vh;
+    padding-left: 4vw;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .card {
     background-color: white;
     display: flex;
     justify-content: space-between;
-    width: 75vw;
-    align-self: center;
+    align-items: top;
+    width: 750w;
     padding: 50px;
     margin: 0;
+}
+
+.current-card {
+    font-weight: bold;
+}
+
+h1 {
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 153, 255);
+    line-height: 1.5em;
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.card-fields {
+    margin: 15px 0;
+    line-height: 1.25em;
+    font-size: 1em;
+}
+
+.card-field {
+    font-weight: bold;
 }
 
 nav {
@@ -42,4 +67,30 @@ main {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
+}
+
+.nav-button {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.action-buttons {
+    width: 175px;
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    margin: 5px;
+}
+
+.action-button {
+    background-color: rgb(0, 153, 255);
+    color: white;
+    border-color: rgb(0, 153, 255);
+    border-radius: 8px;
+    padding: 3px;
+    width: 50px;
+
 }
