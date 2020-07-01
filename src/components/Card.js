@@ -4,21 +4,23 @@ function Card(props) {
     const { id, name, city, country, title, employer, favoriteMovies } = props.cardData;
 
     return (
-        <div>
-            <h1>{`${name.first} ${name.last}`}</h1>
-            <section>
-                <p><span>From: </span>{`${city}, ${country}`}</p>
-                <p><span>Job Title: </span>{title}</p>
-                <p><span>Employer: </span>{employer}</p>
-            </section>
-            <section>
-                <p>Favorite Movies:</p>
-                <ol>
-                    <li>{favoriteMovies[0]}</li>
-                    <li>{favoriteMovies[1]}</li>
-                    <li>{favoriteMovies[2]}</li>
-                </ol>
-            </section>
+        <div className="card">
+            <div className="card-contents">
+                <h1>{`${name.first} ${name.last}`}</h1>
+                <section>
+                    <p><span className="card-field">From: </span>{`${city}, ${country}`}</p>
+                    <p><span className="card-field">Job Title: </span>{title}</p>
+                    <p><span className="card-field">Employer: </span>{employer}</p>
+                </section>
+                <section>
+                    <p><span className="card-field">Favorite Movies:</span></p>
+                    <ol>
+                        <li>{favoriteMovies[0]}</li>
+                        <li>{favoriteMovies[1]}</li>
+                        <li>{favoriteMovies[2]}</li>
+                    </ol>
+                </section>
+            </div>
             <div>{`${id} / ${props.dataSize}`}</div>
         </div>
     );

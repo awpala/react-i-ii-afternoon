@@ -5,8 +5,6 @@ import {data} from '../data.js';
 import Card from './Card';
 import Nav from './Nav';
 
-// const data = require('../data').data;
-
 class Main extends Component {
     constructor(props) {
         super(props);
