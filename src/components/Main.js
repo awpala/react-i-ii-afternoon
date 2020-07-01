@@ -44,25 +44,12 @@ class Main extends Component {
     }
 
     render() {
-        const { id, name, city, country, employer, title, favoriteMovies } = this.state.data[this.state.currentCard];
-
         return (
             <main>
-                <h1>{`${name.first} ${name.last}`}</h1>
-                <section>
-                    <p><span>From: </span>{`${city}, ${country}`}</p>
-                    <p><span>Job Title: </span>{title}</p>
-                    <p><span>Employer: </span>{employer}</p>
-                </section>
-                <section>
-                    <p>Favorite Movies:</p>
-                    <ol>
-                        <li>{favoriteMovies[0]}</li>
-                        <li>{favoriteMovies[1]}</li>
-                        <li>{favoriteMovies[2]}</li>
-                    </ol>
-                </section>
-                <div>{`${id} / ${this.state.data.length}`}</div>
+                <Card
+                    cardData = {this.state.data[this.state.currentCard]}
+                    dataSize = {this.state.data.length}
+                />
                 <Nav
                     prevFn={this.handlePrevious}
                     nextFn={this.handleNext}
