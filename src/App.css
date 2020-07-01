@@ -1,3 +1,5 @@
+/* General Styling */
+
 body {
     background-color: black;
     margin: 0;
@@ -5,10 +7,13 @@ body {
 
 .App {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+
+/* Header.js Component Styling */
 
 header {
     background-color: rgb(0, 153, 255);
@@ -20,6 +25,18 @@ header {
     font-size: 1em;
     font-weight: bold;
 }
+
+/* Main.js Component Styling */
+
+main {
+    height: 50vh;
+    padding: 80px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card.js Component Styling */
 
 .card {
     background-color: white;
@@ -53,36 +70,30 @@ h1 {
     font-weight: bold;
 }
 
+p {
+    margin: 5px;
+}
+
+/* Nav.js Card Component Styling */
+
 nav {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
 }
 
-
-main {
-    height: 50vh;
-    padding: 80px;
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-}
-
 .nav-button {
     background-color: black;
     color: white;
     border: none;
+    font-weight: bold;
 }
 
 .action-buttons {
     width: 175px;
     display: flex;
     justify-content: space-around;
-}
-
-p {
-    margin: 5px;
+    font-weight: bold;
 }
 
 .action-button {
